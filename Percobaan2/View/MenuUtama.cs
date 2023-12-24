@@ -40,5 +40,12 @@ namespace Percobaan2.View
         {
             isiTransaksi1.BringToFront();
         }
+
+        private void akunOperatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AkunOperator akunOperator = new AkunOperator();
+
+            akunOperator.ShowDialog();
+        }
     }
 }

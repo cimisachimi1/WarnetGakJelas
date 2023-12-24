@@ -2004,11 +2004,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Tugas\\SEM 3\\Pemrogramman lanjut\\backup\\Percobaan2\\Percobaan2\\Percobaan2.csproj",
+      "projectUniqueName": "C:\\Tugas\\SEM 3\\Pemrogramman lanjut\\backup\\Percobaan2\\WarnetGakJelas\\Percobaan2\\Percobaan2.csproj",
       "projectName": "Percobaan2",
-      "projectPath": "C:\\Tugas\\SEM 3\\Pemrogramman lanjut\\backup\\Percobaan2\\Percobaan2\\Percobaan2.csproj",
+      "projectPath": "C:\\Tugas\\SEM 3\\Pemrogramman lanjut\\backup\\Percobaan2\\WarnetGakJelas\\Percobaan2\\Percobaan2.csproj",
       "packagesPath": "C:\\Users\\Fatur\\.nuget\\packages\\",
-      "outputPath": "C:\\Tugas\\SEM 3\\Pemrogramman lanjut\\backup\\Percobaan2\\Percobaan2\\obj\\",
+      "outputPath": "C:\\Tugas\\SEM 3\\Pemrogramman lanjut\\backup\\Percobaan2\\WarnetGakJelas\\Percobaan2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fatur\\AppData\\Roaming\\NuGet\\NuGet.Config",

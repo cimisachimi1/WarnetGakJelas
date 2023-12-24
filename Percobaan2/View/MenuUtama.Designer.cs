@@ -38,6 +38,10 @@
             pnlFocus = new Panel();
             isiTransaksi1 = new IsiTransaksi();
             laporan1 = new Laporan();
+            menuStrip1 = new MenuStrip();
+            dfd = new ToolStripMenuItem();
+            akunOperatorToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btnTransaksi
@@ -49,7 +53,7 @@
             btnTransaksi.ForeColor = Color.White;
             btnTransaksi.Image = (Image)resources.GetObject("btnTransaksi.Image");
             btnTransaksi.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTransaksi.Location = new Point(706, 25);
+            btnTransaksi.Location = new Point(773, 25);
             btnTransaksi.Margin = new Padding(4, 3, 4, 3);
             btnTransaksi.Name = "btnTransaksi";
             btnTransaksi.Size = new Size(144, 50);
@@ -68,7 +72,7 @@
             btnTambahan.ForeColor = Color.White;
             btnTambahan.Image = (Image)resources.GetObject("btnTambahan.Image");
             btnTambahan.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTambahan.Location = new Point(554, 25);
+            btnTambahan.Location = new Point(621, 25);
             btnTambahan.Margin = new Padding(4, 3, 4, 3);
             btnTambahan.Name = "btnTambahan";
             btnTambahan.Size = new Size(144, 50);
@@ -87,7 +91,7 @@
             btnAkun.ForeColor = Color.White;
             btnAkun.Image = (Image)resources.GetObject("btnAkun.Image");
             btnAkun.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAkun.Location = new Point(402, 25);
+            btnAkun.Location = new Point(469, 25);
             btnAkun.Margin = new Padding(4, 3, 4, 3);
             btnAkun.Name = "btnAkun";
             btnAkun.Size = new Size(144, 50);
@@ -106,7 +110,7 @@
             btnKomputer.ForeColor = Color.White;
             btnKomputer.Image = (Image)resources.GetObject("btnKomputer.Image");
             btnKomputer.ImageAlign = ContentAlignment.MiddleLeft;
-            btnKomputer.Location = new Point(250, 25);
+            btnKomputer.Location = new Point(317, 25);
             btnKomputer.Margin = new Padding(4, 3, 4, 3);
             btnKomputer.Name = "btnKomputer";
             btnKomputer.Size = new Size(144, 50);
@@ -133,7 +137,7 @@
             // pnlFocus
             // 
             pnlFocus.BackColor = SystemColors.ActiveCaption;
-            pnlFocus.Location = new Point(250, 74);
+            pnlFocus.Location = new Point(317, 74);
             pnlFocus.Name = "pnlFocus";
             pnlFocus.Size = new Size(144, 10);
             pnlFocus.TabIndex = 16;
@@ -147,10 +151,33 @@
             // 
             // laporan1
             // 
-            laporan1.Location = new Point(12, 90);
+            laporan1.Location = new Point(24, 90);
             laporan1.Name = "laporan1";
             laporan1.Size = new Size(1066, 569);
             laporan1.TabIndex = 18;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { dfd });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1077, 24);
+            menuStrip1.TabIndex = 19;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // dfd
+            // 
+            dfd.DropDownItems.AddRange(new ToolStripItem[] { akunOperatorToolStripMenuItem });
+            dfd.Name = "dfd";
+            dfd.Size = new Size(50, 20);
+            dfd.Text = "Menu";
+            // 
+            // akunOperatorToolStripMenuItem
+            // 
+            akunOperatorToolStripMenuItem.Name = "akunOperatorToolStripMenuItem";
+            akunOperatorToolStripMenuItem.Size = new Size(180, 22);
+            akunOperatorToolStripMenuItem.Text = "Akun Operator";
+            akunOperatorToolStripMenuItem.Click += akunOperatorToolStripMenuItem_Click;
             // 
             // MenuUtama
             // 
@@ -166,9 +193,14 @@
             Controls.Add(btnTambahan);
             Controls.Add(btnAkun);
             Controls.Add(btnKomputer);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "MenuUtama";
             Text = "MenuUtama";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -182,5 +214,8 @@
         private Panel pnlFocus;
         private IsiTransaksi isiTransaksi1;
         private Laporan laporan1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem dfd;
+        private ToolStripMenuItem akunOperatorToolStripMenuItem;
     }
 }
