@@ -178,7 +178,6 @@ C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\o
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiTransaksi.resources
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Laporan.resources
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Login.resources
-C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.LoginGagal.resources
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.MenuUtama.resources
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.GenerateResource.cache
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.GeneratedMSBuildEditorConfig.editorconfig

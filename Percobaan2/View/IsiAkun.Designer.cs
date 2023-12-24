@@ -80,6 +80,7 @@
             btnBaruAkun.TabIndex = 4;
             btnBaruAkun.Text = "Buat Akun";
             btnBaruAkun.UseVisualStyleBackColor = true;
+            btnBaruAkun.Click += btnBaruAkun_Click;
             // 
             // btnEditAkun
             // 

@@ -85,5 +85,42 @@ namespace Percobaan2.Model.Repository
 
             return result;
         }
+        public int Edit(Pelanggan pelanggan)
+        {
+            int result = 0;
+
+            string sql = @"UPDATE pelanggan 
+                   SET NamaPelanggan = @NamaPelanggan, 
+                       Alamat = @Alamat, 
+                       Email = @Email, 
+                       NomerHp = @NomerHp, 
+                       Username = @Username, 
+                       Password = @Password, 
+                       SisaWaktu = @SisaWaktu
+                   WHERE ID_Pelanggan = @ID_Pelanggan";
+
+            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+            {
+                cmd.Parameters.AddWithValue("@ID_Pelanggan", pelanggan.ID_Pelanggan);
+                cmd.Parameters.AddWithValue("@NamaPelanggan", pelanggan.NamaPelanggan);
+                cmd.Parameters.AddWithValue("@Alamat", pelanggan.Alamat);
+                cmd.Parameters.AddWithValue("@Email", pelanggan.Email);
+                cmd.Parameters.AddWithValue("@NomerHp", pelanggan.NomerHp);
+                cmd.Parameters.AddWithValue("@Username", pelanggan.Username);
+                cmd.Parameters.AddWithValue("@Password", pelanggan.Password);
+                cmd.Parameters.AddWithValue("@SisaWaktu", pelanggan.SisaWaktu);
+
+                try
+                {
+                    result = cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("EditPelanggan error: {0}", ex.Message);
+                }
+            }
+
+            return result;
+        }
     }
 }

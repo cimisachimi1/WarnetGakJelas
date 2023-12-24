@@ -26,7 +26,7 @@ namespace Percobaan2.Controller
         // Example:
 
 
-        public int CreatePelanggan(Pelanggan pelangganObject)
+        public int Create(Pelanggan pelangganObject)
         {
             using (DbContext context = new DbContext())
             {
@@ -35,6 +35,14 @@ namespace Percobaan2.Controller
             }
         }
 
-        // Add other methods as needed for Pelanggan CRUD operations.
+        public int Update(Pelanggan pelangganObject)
+        {
+            using (DbContext context = new DbContext())
+            {
+                _repository = new PelangganRepository(context);
+                return _repository.Edit(pelangganObject);
+            }
+        }
+
     }
 }

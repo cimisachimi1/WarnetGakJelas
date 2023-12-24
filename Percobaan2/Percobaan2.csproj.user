@@ -4,9 +4,6 @@
     <Compile Update="View\AkunOperator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\BeliPaket.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="View\CrudOperator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -24,9 +21,6 @@
     </Compile>
     <Compile Update="View\Laporan.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="View\LoginGagal.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\Login.cs">
       <SubType>Form</SubType>

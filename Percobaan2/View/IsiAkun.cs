@@ -16,7 +16,7 @@ namespace Percobaan2.View
     {
         private List<Pelanggan> ListOfPelanggan = new List<Pelanggan>();
 
-        private PelangganController controllerPelanggan;
+        public PelangganController controllerPelanggan;
 
         public IsiAkun()
         {
@@ -60,12 +60,62 @@ namespace Percobaan2.View
                 item.SubItems.Add(pelanggan.Email);
                 item.SubItems.Add(pelanggan.NomerHp);
                 item.SubItems.Add(pelanggan.Username);
-                item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss")); 
+                item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss"));
 
                 lvwAkun.Items.Add(item);
             }
+        }
+        private void OnCreateEventHandler(Pelanggan pelanggan)
+        {
+            // Add the new pelanggan object to the collection
+            ListOfPelanggan.Add(pelanggan);
 
+            int noUrut = lvwAkun.Items.Count + 1;
+
+            // Display the data of the new pelanggan in the list view
+            ListViewItem item = new ListViewItem(noUrut.ToString());
+            item.SubItems.Add(pelanggan.ID_Pelanggan.ToString());
+            item.SubItems.Add(pelanggan.NamaPelanggan);
+            item.SubItems.Add(pelanggan.Alamat);
+            item.SubItems.Add(pelanggan.Email);
+            item.SubItems.Add(pelanggan.NomerHp);
+            item.SubItems.Add(pelanggan.Username);
+            item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss"));
+
+            lvwAkun.Items.Add(item);
+        }
+        private void OnUpdateEventHandler(Pelanggan pelanggan)
+        {
+            // Check if any item is selected in the list view
+            if (lvwAkun.SelectedItems.Count > 0)
+            {
+                // Get the index of the selected item
+                int index = lvwAkun.SelectedIndices[0];
+
+                // Update information of the selected pelanggan in the list view
+                ListViewItem itemRow = lvwAkun.Items[index];
+                itemRow.SubItems[1].Text = pelanggan.ID_Pelanggan.ToString();
+                itemRow.SubItems[2].Text = pelanggan.NamaPelanggan;
+                itemRow.SubItems[3].Text = pelanggan.Alamat;
+                itemRow.SubItems[4].Text = pelanggan.Email;
+                itemRow.SubItems[5].Text = pelanggan.NomerHp;
+                itemRow.SubItems[6].Text = pelanggan.Username;
+                itemRow.SubItems[7].Text = pelanggan.SisaWaktu.ToString("hh':'mm':'ss");
+            }
+            else
+            {
+                // Handle the case where no item is selected
+                // You may show a message or take appropriate action
+            }
+        }
+
+
+        private void btnBaruAkun_Click(object sender, EventArgs e)
+        {
+            FrmCrudAkunPelanggan frmcrudakunpelangggan = new FrmCrudAkunPelanggan();
+            frmcrudakunpelangggan.ShowDialog();
 
         }
+
     }
 }

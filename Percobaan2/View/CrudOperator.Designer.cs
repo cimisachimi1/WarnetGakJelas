@@ -48,8 +48,8 @@
             textBox5 = new TextBox();
             textBox4 = new TextBox();
             textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtNamaPelanggan = new TextBox();
+            txtIDPelanggan = new TextBox();
             label3 = new Label();
             btnKirim = new Button();
             btnCancel = new Button();
@@ -128,8 +128,8 @@
             panel2.Controls.Add(textBox5);
             panel2.Controls.Add(textBox4);
             panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtNamaPelanggan);
+            panel2.Controls.Add(txtIDPelanggan);
             panel2.Location = new Point(12, 25);
             panel2.Name = "panel2";
             panel2.Size = new Size(321, 244);
@@ -246,21 +246,21 @@
             textBox3.TabIndex = 3;
             textBox3.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtNamaPelanggan
             // 
-            textBox2.Location = new Point(108, 55);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(139, 23);
-            textBox2.TabIndex = 3;
-            textBox2.TextChanged += textBox1_TextChanged;
+            txtNamaPelanggan.Location = new Point(108, 55);
+            txtNamaPelanggan.Name = "txtNamaPelanggan";
+            txtNamaPelanggan.Size = new Size(139, 23);
+            txtNamaPelanggan.TabIndex = 3;
+            txtNamaPelanggan.TextChanged += textBox1_TextChanged;
             // 
-            // textBox1
+            // txtIDPelanggan
             // 
-            textBox1.Location = new Point(108, 26);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(139, 23);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtIDPelanggan.Location = new Point(108, 26);
+            txtIDPelanggan.Name = "txtIDPelanggan";
+            txtIDPelanggan.Size = new Size(139, 23);
+            txtIDPelanggan.TabIndex = 3;
+            txtIDPelanggan.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
@@ -315,7 +315,7 @@
         private Label label3;
         private Label label2;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox txtIDPelanggan;
         private Label label5;
         private TextBox textBox9;
         private TextBox textBox8;
@@ -323,7 +323,7 @@
         private TextBox textBox5;
         private TextBox textBox4;
         private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtNamaPelanggan;
         private Label label6;
         private Label label12;
         private Label label11;
