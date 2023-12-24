@@ -1,0 +1,138 @@
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.exe
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.deps.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.runtimeconfig.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.pdb
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.AssemblyReference.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.GenerateResource.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.AssemblyInfoInputs.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.AssemblyInfo.cs
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.CoreCompileInputs.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.CopyComplete
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\refint\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.pdb
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.genruntimeconfig.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\ref\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.Properties.Resources.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Login.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.LoginGagal.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\WarnetFP\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.MainMenu.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.exe
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.deps.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.runtimeconfig.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.pdb
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.AssemblyReference.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.Properties.Resources.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Login.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.LoginGagal.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.GenerateResource.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.AssemblyInfoInputs.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.AssemblyInfo.cs
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.CoreCompileInputs.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.CopyComplete
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\refint\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.pdb
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.genruntimeconfig.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\ref\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\ZstdSharp.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\NuGet.Frameworks.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.sourcelink.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiKomputer.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.MenuUtama.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiAkun.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiTransaksi.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\Final Project\WarnetFinalProject\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Laporan.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.exe
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.deps.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.runtimeconfig.json
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Percobaan2.pdb
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\NuGet.Frameworks.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Data.SQLite.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\ZstdSharp.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.AssemblyReference.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.Properties.Resources.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiAkun.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiKomputer.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Laporan.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.Login.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.LoginGagal.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.MenuUtama.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.GenerateResource.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.AssemblyInfoInputs.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.AssemblyInfo.cs
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.CoreCompileInputs.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.csproj.CopyComplete
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\refint\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.pdb
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.genruntimeconfig.cache
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\ref\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.IsiTransaksi.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.AkunOperator.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.CrudOperator.resources
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.FrmCrudAkunPelanggan.resources
