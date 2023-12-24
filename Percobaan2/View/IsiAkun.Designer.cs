@@ -32,14 +32,18 @@
             txtCariAkun = new TextBox();
             cmbCariAkun = new ComboBox();
             btnCariAkun = new Button();
+            btnBaruAkun = new Button();
+            btnEditAkun = new Button();
+            btnHapusAkun = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // lvwAkun
             // 
-            lvwAkun.ForeColor = SystemColors.ActiveCaption;
+            lvwAkun.ForeColor = Color.Black;
             lvwAkun.Location = new Point(235, 48);
             lvwAkun.Name = "lvwAkun";
-            lvwAkun.Size = new Size(700, 468);
+            lvwAkun.Size = new Size(809, 468);
             lvwAkun.TabIndex = 0;
             lvwAkun.UseCompatibleStateImageBehavior = false;
             // 
@@ -68,10 +72,50 @@
             btnCariAkun.Text = "Cari";
             btnCariAkun.UseVisualStyleBackColor = true;
             // 
+            // btnBaruAkun
+            // 
+            btnBaruAkun.Location = new Point(408, 19);
+            btnBaruAkun.Name = "btnBaruAkun";
+            btnBaruAkun.Size = new Size(75, 23);
+            btnBaruAkun.TabIndex = 4;
+            btnBaruAkun.Text = "Buat Akun";
+            btnBaruAkun.UseVisualStyleBackColor = true;
+            // 
+            // btnEditAkun
+            // 
+            btnEditAkun.Location = new Point(489, 19);
+            btnEditAkun.Name = "btnEditAkun";
+            btnEditAkun.Size = new Size(105, 23);
+            btnEditAkun.TabIndex = 5;
+            btnEditAkun.Text = "Edit dan TopUP";
+            btnEditAkun.UseVisualStyleBackColor = true;
+            // 
+            // btnHapusAkun
+            // 
+            btnHapusAkun.Location = new Point(600, 19);
+            btnHapusAkun.Name = "btnHapusAkun";
+            btnHapusAkun.Size = new Size(88, 23);
+            btnHapusAkun.TabIndex = 5;
+            btnHapusAkun.Text = "Hapus";
+            btnHapusAkun.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(956, 19);
+            button1.Name = "button1";
+            button1.Size = new Size(88, 23);
+            button1.TabIndex = 5;
+            button1.Text = "Refresh";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // IsiAkun
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(button1);
+            Controls.Add(btnHapusAkun);
+            Controls.Add(btnEditAkun);
+            Controls.Add(btnBaruAkun);
             Controls.Add(btnCariAkun);
             Controls.Add(cmbCariAkun);
             Controls.Add(txtCariAkun);
@@ -88,5 +132,9 @@
         private TextBox txtCariAkun;
         private ComboBox cmbCariAkun;
         private Button btnCariAkun;
+        private Button btnBaruAkun;
+        private Button btnEditAkun;
+        private Button btnHapusAkun;
+        private Button button1;
     }
 }

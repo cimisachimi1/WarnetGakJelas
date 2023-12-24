@@ -12,37 +12,6 @@ namespace Percobaan2.Model.Repository
         {
             _conn = context.Conn;
         }
-
-        public int Create(Operator operatorObject)
-        {
-            int result = 0;
-
-            string sql = @"INSERT INTO operator (ID_Operator, Nama, Alamat, Umur, Mulai_Shift, Akhir_Shift, Username, Password)
-                           VALUES (@ID_Operator, @Nama, @Alamat, @Umur, @Mulai_Shift, @Akhir_Shift, @Username, @Password)";
-
-            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
-            {
-                cmd.Parameters.AddWithValue("@ID_Operator", operatorObject.ID_Operator);
-                cmd.Parameters.AddWithValue("@Nama", operatorObject.Nama);
-                cmd.Parameters.AddWithValue("@Alamat", operatorObject.Alamat);
-                cmd.Parameters.AddWithValue("@Umur", operatorObject.Umur);
-                cmd.Parameters.AddWithValue("@Mulai_Shift", operatorObject.Mulai_Shift);
-                cmd.Parameters.AddWithValue("@Akhir_Shift", operatorObject.Akhir_Shift);
-                cmd.Parameters.AddWithValue("@Username", operatorObject.Username);
-                cmd.Parameters.AddWithValue("@Password", operatorObject.Password);
-
-                try
-                {
-                    result = cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Create error: {0}", ex.Message);
-                }
-            }
-
-            return result;
-        }
         public List<Operator> ReadAll()
         {
             List<Operator> operators = new List<Operator>();
@@ -83,6 +52,37 @@ namespace Percobaan2.Model.Repository
 
             return operators;
         }
+        public int Create(Operator operatorObject)
+        {
+            int result = 0;
+
+            string sql = @"INSERT INTO operator (ID_Operator, Nama, Alamat, Umur, Mulai_Shift, Akhir_Shift, Username, Password)
+                           VALUES (@ID_Operator, @Nama, @Alamat, @Umur, @Mulai_Shift, @Akhir_Shift, @Username, @Password)";
+
+            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+            {
+                cmd.Parameters.AddWithValue("@ID_Operator", operatorObject.ID_Operator);
+                cmd.Parameters.AddWithValue("@Nama", operatorObject.Nama);
+                cmd.Parameters.AddWithValue("@Alamat", operatorObject.Alamat);
+                cmd.Parameters.AddWithValue("@Umur", operatorObject.Umur);
+                cmd.Parameters.AddWithValue("@Mulai_Shift", operatorObject.Mulai_Shift);
+                cmd.Parameters.AddWithValue("@Akhir_Shift", operatorObject.Akhir_Shift);
+                cmd.Parameters.AddWithValue("@Username", operatorObject.Username);
+                cmd.Parameters.AddWithValue("@Password", operatorObject.Password);
+
+                try
+                {
+                    result = cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Create error: {0}", ex.Message);
+                }
+            }
+
+            return result;
+        }
+        
 
     }
 }

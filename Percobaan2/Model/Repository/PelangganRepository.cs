@@ -1,71 +1,89 @@
-﻿using System;
-using System.Collections.Generic;
-using MySql.Data.MySqlClient;
-using Percobaan2.Model.Entity;
+﻿using MySql.Data.MySqlClient;
 using Percobaan2.Model.Context;
+using Percobaan2.Model.Entity;
+using System;
+using System.Collections.Generic;
 
 namespace Percobaan2.Model.Repository
 {
     public class PelangganRepository
     {
-        // deklarasi objek connection
         private MySqlConnection _conn;
 
-        // constructor
         public PelangganRepository(DbContext context)
         {
-            // inisialisasi objek connection
             _conn = context.Conn;
-        }
-
-        // constructor with connection parameter
-        public PelangganRepository(MySqlConnection connection)
-        {
-            _conn = connection;
         }
 
         public List<Pelanggan> ReadAll()
         {
-            // membuat objek collection untuk menampung objek mahasiswa
-            List<Pelanggan> list = new List<Pelanggan>();
+            List<Pelanggan> pelangganList = new List<Pelanggan>();
 
             try
             {
-                // deklarasi perintah SQL
-                string sql = @"SELECT ID_Pelanggan, Nama_Pelanggan, Alamat, Email, NomerHp 
-                               FROM pelanggan 
-                               ORDER BY Nama_Pelanggan";
+                string sql = @"SELECT ID_Pelanggan, NamaPelanggan, Alamat, Email, NomerHp, Username, Password, SisaWaktu
+                           FROM pelanggan 
+                           ORDER BY NamaPelanggan";
 
-                // membuat objek command menggunakan blok using
                 using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
                 {
-                    // membuat objek dtr (data reader) untuk menampung result set (hasil perintah SELECT)
                     using (MySqlDataReader dtr = cmd.ExecuteReader())
                     {
-                        // panggil method Read untuk mendapatkan baris dari result set
                         while (dtr.Read())
                         {
-                            // proses konversi dari row result set ke object
-                            Pelanggan akunPlnggn = new Pelanggan();
-                            akunPlnggn.ID_Pelanggan = dtr["ID_Pelanggan"].ToString();
-                            akunPlnggn.NamaPelanggan = dtr["NamaPelanggan"].ToString();
-                            akunPlnggn.Alamat = dtr["Alamat"].ToString();
-                            akunPlnggn.Email = dtr["Email"].ToString();
-                            akunPlnggn.NomerHp = dtr["NomerHp"].ToString();
+                            Pelanggan pelanggan = new Pelanggan
+                            {
+                                ID_Pelanggan = dtr["ID_Pelanggan"].ToString(),
+                                NamaPelanggan = dtr["NamaPelanggan"].ToString(),
+                                Alamat = dtr["Alamat"].ToString(),
+                                Email = dtr["Email"].ToString(),
+                                NomerHp = dtr["NomerHp"].ToString(),
+                                Username = dtr["Username"].ToString(),
+                                Password = dtr["Password"].ToString(),
+                                SisaWaktu = (TimeSpan)dtr["SisaWaktu"]
+                            };
 
-                            // tambahkan objek mahasiswa ke dalam collection
-                            list.Add(akunPlnggn);
+                            pelangganList.Add(pelanggan);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.Print("ReadAll error: {0}", ex.Message);
+                Console.WriteLine("ReadAllPelanggan error: {0}", ex.Message);
             }
 
-            return list;
+            return pelangganList;
         }
 
+        public int Create(Pelanggan pelanggan)
+        {
+            int result = 0;
+
+            string sql = @"INSERT INTO pelanggan (ID_Pelanggan, NamaPelanggan, Alamat, Email, NomerHp, Username, Password)
+                           VALUES (@ID_Pelanggan, @NamaPelanggan, @Alamat, @Email, @NomerHp, @Username, @Password)";
+
+            using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+            {
+                cmd.Parameters.AddWithValue("@ID_Pelanggan", pelanggan.ID_Pelanggan);
+                cmd.Parameters.AddWithValue("@NamaPelanggan", pelanggan.NamaPelanggan);
+                cmd.Parameters.AddWithValue("@Alamat", pelanggan.Alamat);
+                cmd.Parameters.AddWithValue("@Email", pelanggan.Email);
+                cmd.Parameters.AddWithValue("@NomerHp", pelanggan.NomerHp);
+                cmd.Parameters.AddWithValue("@Username", pelanggan.Username);
+                cmd.Parameters.AddWithValue("@Password", pelanggan.Password);
+
+                try
+                {
+                    result = cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("CreatePelanggan error: {0}", ex.Message);
+                }
+            }
+
+            return result;
+        }
     }
 }

@@ -15,8 +15,6 @@ namespace Percobaan2.Model.Entity
         public string Alamat { get; set; }
         public string Email { get; set; }
         public string NomerHp { get; set; }
-
-
-
+        public TimeSpan SisaWaktu { get; set; }
     }
 }

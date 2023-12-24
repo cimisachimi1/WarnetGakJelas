@@ -33,32 +33,35 @@ namespace Percobaan2.View
             lvwAkun.View = System.Windows.Forms.View.Details;
             lvwAkun.FullRowSelect = true;
             lvwAkun.GridLines = true;
-            lvwAkun.Columns.Add("No.", 91, HorizontalAlignment.Center);
-            lvwAkun.Columns.Add("ID_Pelanggan", 91, HorizontalAlignment.Center);
-            lvwAkun.Columns.Add("NamaPelanggan", 170, HorizontalAlignment.Left);
-            lvwAkun.Columns.Add("email", 80, HorizontalAlignment.Center);
-            lvwAkun.Columns.Add("NomerHp", 91, HorizontalAlignment.Center);
+
+            lvwAkun.Columns.Add("No.", 35, HorizontalAlignment.Center);
+            lvwAkun.Columns.Add("ID Pelanggan", 91, HorizontalAlignment.Center);
+            lvwAkun.Columns.Add("Nama", 150, HorizontalAlignment.Left);
+            lvwAkun.Columns.Add("Alamat", 150, HorizontalAlignment.Left);
+            lvwAkun.Columns.Add("Email", 100, HorizontalAlignment.Center);
+            lvwAkun.Columns.Add("Nomer HP", 100, HorizontalAlignment.Center);
+            lvwAkun.Columns.Add("Username", 100, HorizontalAlignment.Center);
+            lvwAkun.Columns.Add("Sisa Waktu", 100, HorizontalAlignment.Center);
+
         }
         private void LoadDataPelanggan()
         {
-            // kosongkan listview
             lvwAkun.Items.Clear();
-
-            // panggil method ReadAll dan tampung datanya ke dalam collection
             ListOfPelanggan = controllerPelanggan.ReadAll();
 
-            // ekstrak objek mhs dari collection
-            foreach (var mhs in ListOfPelanggan)
+            foreach (var pelanggan in ListOfPelanggan)
             {
                 var noUrut = lvwAkun.Items.Count + 1;
 
-
                 var item = new ListViewItem(noUrut.ToString());
+                item.SubItems.Add(pelanggan.ID_Pelanggan.ToString());
+                item.SubItems.Add(pelanggan.NamaPelanggan);
+                item.SubItems.Add(pelanggan.Alamat);
+                item.SubItems.Add(pelanggan.Email);
+                item.SubItems.Add(pelanggan.NomerHp);
+                item.SubItems.Add(pelanggan.Username);
+                item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss")); 
 
-                item.SubItems.Add(mhs.NamaPelanggan);
-                item.SubItems.Add(mhs.Email);
-                item.SubItems.Add(mhs.NomerHp);
-                // tampilkan data mhs ke listview
                 lvwAkun.Items.Add(item);
             }
 
