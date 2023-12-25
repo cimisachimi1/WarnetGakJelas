@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 using Percobaan2.Model.Context;
 using Percobaan2.Model.Entity;
 using System;
@@ -128,6 +129,37 @@ namespace Percobaan2.Model.Repository
 
             return result;
         }
+
+
+        public int Delete(Pelanggan pelanggan)
+        {
+            int result = 0;
+            {
+                string sql = "DELETE FROM pelanggan WHERE ID_Pelanggan = @idPelanggan";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+                {
+                    cmd.Parameters.AddWithValue("@idPelanggan", pelanggan.ID_Pelanggan);
+
+                    try
+                    {
+                        // Execute the DELETE command
+                        cmd.ExecuteNonQuery();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("DeletePelanggan error: {0}", ex.Message);
+                        // You may want to throw an exception here or handle the error in some way
+                    }
+                }
+            }
+            
+
+            return result;
+        }
+
+
         public int Edit(Pelanggan pelanggan)
         {
             int result = 0;

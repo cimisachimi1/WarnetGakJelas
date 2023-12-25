@@ -28,41 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button2 = new Button();
-            richTextBox3 = new RichTextBox();
-            button1 = new Button();
             label1 = new Label();
             label2 = new Label();
-            richTextBox1 = new RichTextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnBatalLogin = new Button();
+            btnLoginAwal = new Button();
             SuspendLayout();
-            // 
-            // button2
-            // 
-            button2.Location = new Point(370, 93);
-            button2.Name = "button2";
-            button2.Size = new Size(93, 36);
-            button2.TabIndex = 0;
-            button2.Text = "Login";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox3
-            // 
-            richTextBox3.Location = new Point(123, 45);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(205, 28);
-            richTextBox3.TabIndex = 1;
-            richTextBox3.Text = "";
-            richTextBox3.TextChanged += richTextBox3_TextChanged;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(370, 40);
-            button1.Name = "button1";
-            button1.Size = new Size(93, 36);
-            button1.TabIndex = 0;
-            button1.Text = "Batal";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -86,26 +58,51 @@
             label2.Text = "Password :";
             label2.Click += label1_Click;
             // 
-            // richTextBox1
+            // txtUsername
             // 
-            richTextBox1.Location = new Point(123, 90);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(205, 28);
-            richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "";
-            richTextBox1.TextChanged += richTextBox3_TextChanged;
+            txtUsername.Location = new Point(144, 43);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(168, 23);
+            txtUsername.TabIndex = 3;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(144, 90);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(168, 23);
+            txtPassword.TabIndex = 3;
+            // 
+            // btnBatalLogin
+            // 
+            btnBatalLogin.Location = new Point(369, 43);
+            btnBatalLogin.Name = "btnBatalLogin";
+            btnBatalLogin.Size = new Size(75, 23);
+            btnBatalLogin.TabIndex = 4;
+            btnBatalLogin.Text = "Batal ";
+            btnBatalLogin.UseVisualStyleBackColor = true;
+            btnBatalLogin.Click += btnBatalLogin_Click;
+            // 
+            // btnLoginAwal
+            // 
+            btnLoginAwal.Location = new Point(369, 90);
+            btnLoginAwal.Name = "btnLoginAwal";
+            btnLoginAwal.Size = new Size(75, 23);
+            btnLoginAwal.TabIndex = 4;
+            btnLoginAwal.Text = "Login";
+            btnLoginAwal.UseVisualStyleBackColor = true;
+            btnLoginAwal.Click += btnLoginAwal_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(489, 159);
+            Controls.Add(btnLoginAwal);
+            Controls.Add(btnBatalLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(richTextBox1);
-            Controls.Add(richTextBox3);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Name = "Login";
             Text = "Login";
             ResumeLayout(false);
@@ -119,20 +116,15 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            this.Close();
         }
 
-        private void richTextBox3_TextChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
-        private Button button2;
-        private RichTextBox richTextBox3;
-        private Button button1;
+#endregion
         private Label label1;
         private Label label2;
-        private RichTextBox richTextBox1;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private Button btnBatalLogin;
+        private Button btnLoginAwal;
     }
 }

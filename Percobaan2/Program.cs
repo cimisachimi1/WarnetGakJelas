@@ -15,7 +15,7 @@ namespace Percobaan2
             /// </summary>
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MenuUtama());
+                Application.Run(new Login());
             
         }
     }

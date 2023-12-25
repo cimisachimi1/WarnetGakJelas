@@ -82,7 +82,40 @@ namespace Percobaan2.Model.Repository
 
             return result;
         }
-        
+        public bool IsValidOperator(string userName, string password)
+        {
+            bool result = false;
+
+            try
+            {
+                string sql = @"SELECT COUNT(*) AS row_count
+                       FROM operator
+                       WHERE Username = @userName AND Password = @password";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+                {
+                    cmd.Parameters.AddWithValue("@userName", userName);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (MySqlDataReader dtr = cmd.ExecuteReader())
+                    {
+                        if (dtr.Read())
+                        {
+                            result = Convert.ToInt32(dtr["row_count"]) > 0;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("IsValidOperator error: {0}", ex.Message);
+            }
+
+            return result;
+        }
+
+
+
 
     }
 }

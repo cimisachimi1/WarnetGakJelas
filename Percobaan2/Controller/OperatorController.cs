@@ -33,6 +33,47 @@ namespace Percobaan2.Controller
                 return _repository.Create(operatorObject);
             }
         }
+        public bool IsValidOperator(string userName, string password)
+        {
+            // cek username yang diinputkan tidak boleh kosong
+            if (string.IsNullOrEmpty(userName))
+            {
+                MessageBox.Show("Username harus diisi !!!", "Peringatan",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+
+            // cek password yang diinputkan tidak boleh kosong
+            if (string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Password harus diisi !!!", "Peringatan",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+
+            bool isValidOperator = false;
+
+            // membuat objek context menggunakan blok using
+            using (DbContext context = new DbContext())
+            {
+                // membuat objek class repository
+                _repository = new OperatorRepository(context);
+
+                // panggil method IsValidOperator class repository untuk memeriksa keberadaan operator
+                isValidOperator = _repository.IsValidOperator(userName, password);
+            }
+
+            if (!isValidOperator)
+            {
+                MessageBox.Show("Username atau password operator salah !!!", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                return false;
+            }
+
+            return true;
+        }
+
 
     }
 }

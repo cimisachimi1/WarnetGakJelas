@@ -117,5 +117,85 @@ namespace Percobaan2.View
 
         }
 
+        private void btnCari_Click(object sender, EventArgs e)
+        {
+            // kosongkan listview
+            lvwAkun.Items.Clear();
+
+            // panggil method ReadByNama dan tampung datanya ke dalam collection
+            ListOfPelanggan = controllerPelanggan.ReadByNama(txtCariAkun.Text);
+
+            // ekstrak objek pelanggan dari collection
+            foreach (var pelanggan in ListOfPelanggan)
+            {
+                var noUrut = lvwAkun.Items.Count + 1;
+
+                var item = new ListViewItem(noUrut.ToString());
+                item.SubItems.Add(pelanggan.ID_Pelanggan); // Assuming ID_Pelanggan is the property in Pelanggan class
+                item.SubItems.Add(pelanggan.NamaPelanggan);
+                item.SubItems.Add(pelanggan.Alamat);
+                item.SubItems.Add(pelanggan.Email);
+                item.SubItems.Add(pelanggan.NomerHp);
+                item.SubItems.Add(pelanggan.Username);
+                item.SubItems.Add(pelanggan.Password);
+                item.SubItems.Add(pelanggan.SisaWaktu.ToString()); // Assuming SisaWaktu is of TimeSpan type
+
+                // tampilkan data pelanggan ke listview
+                lvwAkun.Items.Add(item);
+            }
+        }
+
+        private void btnCariAkun_Click(object sender, EventArgs e)
+        {
+            // kosongkan listview
+            lvwAkun.Items.Clear();
+
+            // panggil method ReadByNama dan tampung datanya ke dalam collection
+            ListOfPelanggan = controllerPelanggan.ReadByNama(txtCariAkun.Text);
+
+            // ekstrak objek pelanggan dari collection
+            foreach (var pelanggan in ListOfPelanggan)
+            {
+                var noUrut = lvwAkun.Items.Count + 1;
+
+                var item = new ListViewItem(noUrut.ToString());
+                item.SubItems.Add(pelanggan.ID_Pelanggan); // Assuming ID_Pelanggan is the property in Pelanggan class
+                item.SubItems.Add(pelanggan.NamaPelanggan);
+                item.SubItems.Add(pelanggan.Alamat);
+                item.SubItems.Add(pelanggan.Email);
+                item.SubItems.Add(pelanggan.NomerHp);
+                item.SubItems.Add(pelanggan.Username);
+                item.SubItems.Add(pelanggan.Password);
+                item.SubItems.Add(pelanggan.SisaWaktu.ToString()); // Assuming SisaWaktu is of TimeSpan type
+
+                // tampilkan data pelanggan ke listview
+                lvwAkun.Items.Add(item);
+            }
+        }
+
+        private void btnHapusAkun_Click(object sender, EventArgs e)
+        {
+            if (lvwAkun.SelectedItems.Count > 0)
+            {
+                var konfirmasi = MessageBox.Show("Apakah data mahasiswa ingin dihapus?", "Konfirmasi",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+                if (konfirmasi == DialogResult.Yes)
+                {
+                    // ambil objek mhs yang mau dihapus dari collection
+                    Pelanggan pelanggan = ListOfPelanggan[lvwAkun.SelectedIndices[0]];
+
+                    // panggil operasi CRUD
+                    var result = controllerPelanggan.Delete(pelanggan);
+                    if (result > 0) LoadDataPelanggan();
+                }
+            }
+            else // data belum dipilih
+            {
+                MessageBox.Show("Data mahasiswa belum dipilih !!!", "Peringatan",
+                        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
-}
+    }
+

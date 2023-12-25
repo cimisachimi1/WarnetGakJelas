@@ -71,6 +71,7 @@
             btnCariAkun.TabIndex = 3;
             btnCariAkun.Text = "Cari";
             btnCariAkun.UseVisualStyleBackColor = true;
+            btnCariAkun.Click += btnCariAkun_Click;
             // 
             // btnBaruAkun
             // 
@@ -99,6 +100,7 @@
             btnHapusAkun.TabIndex = 5;
             btnHapusAkun.Text = "Hapus";
             btnHapusAkun.UseVisualStyleBackColor = true;
+            btnHapusAkun.Click += btnHapusAkun_Click;
             // 
             // button1
             // 

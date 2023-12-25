@@ -41,6 +41,7 @@
             menuStrip1 = new MenuStrip();
             dfd = new ToolStripMenuItem();
             akunOperatorToolStripMenuItem = new ToolStripMenuItem();
+            btnLaporan = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -175,9 +176,28 @@
             // akunOperatorToolStripMenuItem
             // 
             akunOperatorToolStripMenuItem.Name = "akunOperatorToolStripMenuItem";
-            akunOperatorToolStripMenuItem.Size = new Size(180, 22);
+            akunOperatorToolStripMenuItem.Size = new Size(152, 22);
             akunOperatorToolStripMenuItem.Text = "Akun Operator";
             akunOperatorToolStripMenuItem.Click += akunOperatorToolStripMenuItem_Click;
+            // 
+            // btnLaporan
+            // 
+            btnLaporan.BackColor = SystemColors.WindowFrame;
+            btnLaporan.FlatAppearance.BorderSize = 0;
+            btnLaporan.FlatStyle = FlatStyle.Flat;
+            btnLaporan.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLaporan.ForeColor = Color.White;
+            btnLaporan.Image = (Image)resources.GetObject("btnLaporan.Image");
+            btnLaporan.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLaporan.Location = new Point(925, 25);
+            btnLaporan.Margin = new Padding(4, 3, 4, 3);
+            btnLaporan.Name = "btnLaporan";
+            btnLaporan.Size = new Size(144, 50);
+            btnLaporan.TabIndex = 10;
+            btnLaporan.Text = "Laporan";
+            btnLaporan.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLaporan.UseVisualStyleBackColor = false;
+            btnLaporan.Click += btnTransaksi_Click;
             // 
             // MenuUtama
             // 
@@ -189,6 +209,7 @@
             Controls.Add(pnlFocus);
             Controls.Add(isiKomputer1);
             Controls.Add(isiAkun1);
+            Controls.Add(btnLaporan);
             Controls.Add(btnTransaksi);
             Controls.Add(btnTambahan);
             Controls.Add(btnAkun);
@@ -217,5 +238,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem dfd;
         private ToolStripMenuItem akunOperatorToolStripMenuItem;
+        private Button btnLaporan;
     }
 }
