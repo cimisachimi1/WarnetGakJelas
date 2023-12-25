@@ -55,6 +55,49 @@ namespace Percobaan2.Model.Repository
 
             return pelangganList;
         }
+        public List<Pelanggan> ReadByNama(string nama)
+        {
+            List<Pelanggan> pelangganList = new List<Pelanggan>();
+
+            try
+            {
+                string sql = @"SELECT ID_Pelanggan, NamaPelanggan, Alamat, Email, NomerHp, Username, Password, SisaWaktu
+                   FROM pelanggan 
+                   WHERE NamaPelanggan LIKE @nama
+                   ORDER BY NamaPelanggan";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
+                {
+                    cmd.Parameters.AddWithValue("@nama", "%" + nama + "%");
+
+                    using (MySqlDataReader dtr = cmd.ExecuteReader())
+                    {
+                        while (dtr.Read())
+                        {
+                            Pelanggan pelanggan = new Pelanggan
+                            {
+                                ID_Pelanggan = dtr["ID_Pelanggan"].ToString(),
+                                NamaPelanggan = dtr["NamaPelanggan"].ToString(),
+                                Alamat = dtr["Alamat"].ToString(),
+                                Email = dtr["Email"].ToString(),
+                                NomerHp = dtr["NomerHp"].ToString(),
+                                Username = dtr["Username"].ToString(),
+                                Password = dtr["Password"].ToString(),
+                                SisaWaktu = (TimeSpan)dtr["SisaWaktu"]
+                            };
+
+                            pelangganList.Add(pelanggan);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ReadByNama error: {0}", ex.Message);
+            }
+
+            return pelangganList;
+        }
 
         public int Create(Pelanggan pelanggan)
         {

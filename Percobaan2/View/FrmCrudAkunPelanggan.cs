@@ -8,8 +8,8 @@
     using System.Text;
     using System.Threading.Tasks;
     using System.Windows.Forms;
-using Percobaan2.Controller;
-using Percobaan2.Model.Entity;
+    using Percobaan2.Controller;
+    using Percobaan2.Model.Entity;
 
 namespace Percobaan2.View
     {
