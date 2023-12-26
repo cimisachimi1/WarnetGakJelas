@@ -33,25 +33,20 @@
             label2 = new Label();
             label3 = new Label();
             panel2 = new Panel();
-            dateTimePicker1 = new DateTimePicker();
-            textBox6 = new TextBox();
-            label12 = new Label();
             label11 = new Label();
-            label10 = new Label();
             label9 = new Label();
             txtEmail = new Label();
             fdsfsdf = new Label();
             tesralse = new Label();
             txtNomerHp = new TextBox();
             txtAlamat = new TextBox();
-            textBox3 = new TextBox();
             txtEmailPelanggan = new TextBox();
             txtIDPelanggan = new TextBox();
             txtNamaPelanggan = new TextBox();
             panel1 = new Panel();
             label6 = new Label();
             label5 = new Label();
-            textBox9 = new TextBox();
+            txtPassword = new TextBox();
             txtUsername = new TextBox();
             panel3 = new Panel();
             label4 = new Label();
@@ -65,7 +60,7 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(478, 278);
+            btnCancel.Location = new Point(472, 170);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(86, 23);
             btnCancel.TabIndex = 7;
@@ -75,7 +70,7 @@
             // 
             // btnKirim
             // 
-            btnKirim.Location = new Point(366, 278);
+            btnKirim.Location = new Point(360, 170);
             btnKirim.Name = "btnKirim";
             btnKirim.Size = new Size(98, 23);
             btnKirim.TabIndex = 8;
@@ -104,66 +99,29 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(dateTimePicker1);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(label12);
             panel2.Controls.Add(label11);
-            panel2.Controls.Add(label10);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(txtEmail);
             panel2.Controls.Add(fdsfsdf);
             panel2.Controls.Add(tesralse);
             panel2.Controls.Add(txtNomerHp);
             panel2.Controls.Add(txtAlamat);
-            panel2.Controls.Add(textBox3);
             panel2.Controls.Add(txtEmailPelanggan);
             panel2.Controls.Add(txtIDPelanggan);
             panel2.Controls.Add(txtNamaPelanggan);
             panel2.Location = new Point(12, 35);
             panel2.Name = "panel2";
-            panel2.Size = new Size(321, 266);
+            panel2.Size = new Size(321, 180);
             panel2.TabIndex = 5;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(103, 191);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 4;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(103, 131);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(139, 23);
-            textBox6.TabIndex = 3;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(9, 197);
-            label12.Name = "label12";
-            label12.Size = new Size(57, 15);
-            label12.TabIndex = 0;
-            label12.Text = "Tgl Lahir :";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(12, 163);
+            label11.Location = new Point(12, 134);
             label11.Name = "label11";
             label11.Size = new Size(79, 15);
             label11.TabIndex = 0;
             label11.Text = "No. Telepon : ";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(12, 134);
-            label10.Name = "label10";
-            label10.Size = new Size(46, 15);
-            label10.TabIndex = 0;
-            label10.Text = "Umur : ";
             // 
             // label9
             // 
@@ -203,7 +161,7 @@
             // 
             // txtNomerHp
             // 
-            txtNomerHp.Location = new Point(103, 160);
+            txtNomerHp.Location = new Point(103, 131);
             txtNomerHp.Name = "txtNomerHp";
             txtNomerHp.Size = new Size(139, 23);
             txtNomerHp.TabIndex = 3;
@@ -214,13 +172,6 @@
             txtAlamat.Name = "txtAlamat";
             txtAlamat.Size = new Size(200, 23);
             txtAlamat.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(103, 131);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(139, 23);
-            textBox3.TabIndex = 3;
             // 
             // txtEmailPelanggan
             // 
@@ -248,7 +199,7 @@
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox9);
+            panel1.Controls.Add(txtPassword);
             panel1.Controls.Add(txtUsername);
             panel1.Location = new Point(364, 35);
             panel1.Name = "panel1";
@@ -273,12 +224,13 @@
             label5.TabIndex = 0;
             label5.Text = "Username : ";
             // 
-            // textBox9
+            // txtPassword
             // 
-            textBox9.Location = new Point(80, 51);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(145, 23);
-            textBox9.TabIndex = 3;
+            txtPassword.Location = new Point(80, 51);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(145, 23);
+            txtPassword.TabIndex = 3;
+            txtPassword.TextChanged += textBox9_TextChanged;
             // 
             // txtUsername
             // 
@@ -315,6 +267,7 @@
             button1.TabIndex = 8;
             button1.Text = "Beli Paket";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // txtSisaWaktu
             // 
@@ -336,7 +289,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 313);
+            ClientSize = new Size(914, 228);
             Controls.Add(btnCancel);
             Controls.Add(btnKirim);
             Controls.Add(label2);
@@ -347,6 +300,7 @@
             Controls.Add(panel1);
             Name = "FrmCrudAkunPelanggan";
             Text = "FrmAkunPelanggan";
+            Load += FrmCrudAkunPelanggan_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
@@ -364,23 +318,18 @@
         private Label label2;
         private Label label3;
         private Panel panel2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox6;
-        private Label label12;
         private Label label11;
-        private Label label10;
         private Label label9;
         private Label txtEmail;
         private Label tesralse;
         private TextBox txtNomerHp;
         private TextBox txtAlamat;
-        private TextBox textBox3;
         private TextBox txtEmailPelanggan;
         private TextBox txtNamaPelanggan;
         private Panel panel1;
         private Label label6;
         private Label label5;
-        private TextBox textBox9;
+        private TextBox txtPassword;
         private TextBox txtUsername;
         private Panel panel3;
         private Label label4;

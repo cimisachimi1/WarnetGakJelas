@@ -22,8 +22,8 @@ namespace Percobaan2.Model.Repository
             try
             {
                 string sql = @"SELECT ID_Paket, Nama, Menit, Harga, Jumlah
-                           FROM paket 
-                           ORDER BY Nama";
+                               FROM paket 
+                               ORDER BY ID_Paket";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, _conn))
                 {
@@ -36,7 +36,7 @@ namespace Percobaan2.Model.Repository
                                 ID_Paket = dtr["ID_Paket"].ToString(),
                                 Nama = dtr["Nama"].ToString(),
                                 Menit = Convert.ToInt32(dtr["Menit"]),
-                                Harga = Convert.ToDecimal(dtr["Harga"]),
+                                Harga = Convert.ToInt32(dtr["Harga"]),
                                 Jumlah = Convert.ToInt32(dtr["Jumlah"])
                             };
 

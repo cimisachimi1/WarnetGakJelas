@@ -92,6 +92,7 @@
             button1.TabIndex = 4;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // IsiTransaksi
             // 

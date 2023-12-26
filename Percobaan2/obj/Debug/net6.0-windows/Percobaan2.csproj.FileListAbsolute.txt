@@ -191,3 +191,4 @@ C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\o
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.pdb
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.genruntimeconfig.cache
 C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\ref\Percobaan2.dll
+C:\Tugas\SEM 3\Pemrogramman lanjut\backup\Percobaan2\WarnetGakJelas\Percobaan2\obj\Debug\net6.0-windows\Percobaan2.View.TambahPaket.resources

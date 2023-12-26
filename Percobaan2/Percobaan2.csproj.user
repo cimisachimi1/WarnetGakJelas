@@ -28,5 +28,8 @@
     <Compile Update="View\MenuUtama.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\TambahPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

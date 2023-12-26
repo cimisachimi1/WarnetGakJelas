@@ -12,7 +12,7 @@ namespace Percobaan2.Model.Entity
         public String ID_Paket { get; set; }
         public string Nama { get; set; }
         public int Menit { get; set; }
-        public decimal Harga { get; set; }
+        public int Harga { get; set; }
         public int Jumlah { get; set; }
     }
 }

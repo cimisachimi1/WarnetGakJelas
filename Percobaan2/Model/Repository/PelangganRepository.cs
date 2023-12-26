@@ -160,7 +160,7 @@ namespace Percobaan2.Model.Repository
         }
 
 
-        public int Edit(Pelanggan pelanggan)
+        public int Update(Pelanggan pelanggan)
         {
             int result = 0;
 

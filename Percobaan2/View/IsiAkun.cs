@@ -65,7 +65,7 @@ namespace Percobaan2.View
                 lvwAkun.Items.Add(item);
             }
         }
-        private void OnCreateEventHandler(Pelanggan pelanggan)
+        private void OnCreatePelangganEventHandler(Pelanggan pelanggan)
         {
             // Add the new pelanggan object to the collection
             ListOfPelanggan.Add(pelanggan);
@@ -80,41 +80,56 @@ namespace Percobaan2.View
             item.SubItems.Add(pelanggan.Email);
             item.SubItems.Add(pelanggan.NomerHp);
             item.SubItems.Add(pelanggan.Username);
+            item.SubItems.Add(pelanggan.Password);
             item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss"));
 
             lvwAkun.Items.Add(item);
         }
         private void OnUpdateEventHandler(Pelanggan pelanggan)
         {
-            // Check if any item is selected in the list view
-            if (lvwAkun.SelectedItems.Count > 0)
-            {
                 // Get the index of the selected item
                 int index = lvwAkun.SelectedIndices[0];
 
                 // Update information of the selected pelanggan in the list view
                 ListViewItem itemRow = lvwAkun.Items[index];
-                itemRow.SubItems[1].Text = pelanggan.ID_Pelanggan.ToString();
+                itemRow.SubItems[1].Text = pelanggan.ID_Pelanggan;
                 itemRow.SubItems[2].Text = pelanggan.NamaPelanggan;
                 itemRow.SubItems[3].Text = pelanggan.Alamat;
                 itemRow.SubItems[4].Text = pelanggan.Email;
                 itemRow.SubItems[5].Text = pelanggan.NomerHp;
                 itemRow.SubItems[6].Text = pelanggan.Username;
                 itemRow.SubItems[7].Text = pelanggan.SisaWaktu.ToString("hh':'mm':'ss");
-            }
-            else
-            {
-                // Handle the case where no item is selected
-                // You may show a message or take appropriate action
-            }
+
+
         }
 
 
         private void btnBaruAkun_Click(object sender, EventArgs e)
         {
-            FrmCrudAkunPelanggan frmcrudakunpelangggan = new FrmCrudAkunPelanggan();
+            FrmCrudAkunPelanggan frmcrudakunpelangggan = new FrmCrudAkunPelanggan("Tambah Data Pelanggan", controllerPelanggan);
+
+            frmcrudakunpelangggan.OnCreate += OnCreatePelangganEventHandler;
+
             frmcrudakunpelangggan.ShowDialog();
 
+        }
+        private void btnEditAkun_Click(object sender, EventArgs e)
+        {
+            if (lvwAkun.SelectedItems.Count > 0) {
+                Pelanggan pelanggan = ListOfPelanggan[lvwAkun.SelectedIndices[0]];
+                
+                FrmCrudAkunPelanggan frmcrudakunpelanggan = new FrmCrudAkunPelanggan("Edit Data Pelanggan ", pelanggan, controllerPelanggan);
+
+                frmcrudakunpelanggan.OnUpdate += OnUpdateEventHandler;
+
+                frmcrudakunpelanggan.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
+                        MessageBoxIcon.Exclamation);
+            }
         }
 
         private void btnCari_Click(object sender, EventArgs e)
@@ -196,6 +211,13 @@ namespace Percobaan2.View
                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void IsiAkun_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
-    }
+}
 

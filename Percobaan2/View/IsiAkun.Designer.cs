@@ -89,8 +89,9 @@
             btnEditAkun.Name = "btnEditAkun";
             btnEditAkun.Size = new Size(105, 23);
             btnEditAkun.TabIndex = 5;
-            btnEditAkun.Text = "Edit dan TopUP";
+            btnEditAkun.Text = "Edit dan TOPUP";
             btnEditAkun.UseVisualStyleBackColor = true;
+            btnEditAkun.Click += btnEditAkun_Click;
             // 
             // btnHapusAkun
             // 
@@ -125,6 +126,7 @@
             Controls.Add(lvwAkun);
             Name = "IsiAkun";
             Size = new Size(1066, 569);
+            Load += IsiAkun_Load;
             ResumeLayout(false);
             PerformLayout();
         }

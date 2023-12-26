@@ -13,10 +13,10 @@
 
 namespace Percobaan2.View
     {
-        public delegate void CreateUpdateEventHandler(Pelanggan pelanggan);
-
     public partial class FrmCrudAkunPelanggan : Form
     {
+        public delegate void CreateUpdateEventHandler(Pelanggan pelanggan);
+
         // deklarasi event ketika terjadi proses input data baru
         public event CreateUpdateEventHandler OnCreate;
 
@@ -24,7 +24,7 @@ namespace Percobaan2.View
         public event CreateUpdateEventHandler OnUpdate;
 
         // deklarasi objek controller
-        private PelangganController controller;
+        private PelangganController controllerPelanggan;
 
         // deklarasi field untuk menyimpan status entry data (input baru atau update)
         private bool isNewData = true;
@@ -39,31 +39,31 @@ namespace Percobaan2.View
         }
 
         // constructor untuk inisialisasi data ketika entri data baru
-        public FrmCrudAkunPelanggan(string title, PelangganController controller)
+        public FrmCrudAkunPelanggan(string title, PelangganController controllerPelanggan)
             : this()
         {
             // ganti text/judul form
             this.Text = title;
-            this.controller = controller;
+            this.controllerPelanggan = controllerPelanggan;
         }
 
         // constructor untuk inisialisasi data ketika mengedit data
-        public FrmCrudAkunPelanggan(string title, Pelanggan obj, PelangganController controller)
+        public FrmCrudAkunPelanggan(string title, Pelanggan obj, PelangganController controllerPelanggan)
             : this()
         {
             // ganti text/judul form
             this.Text = title;
-            this.controller = controller;
+            this.controllerPelanggan = controllerPelanggan;
 
             isNewData = false; // set status edit data
             pelanggan = obj; // set objek pelanggan yang akan diedit
 
             // untuk edit data, tampilkan data lama
-            txtIDPelanggan.Text = pelanggan.ID_Pelanggan.ToString();
+            txtIDPelanggan.Text = pelanggan.ID_Pelanggan;
             txtNamaPelanggan.Text = pelanggan.NamaPelanggan;
-            txtAlamat.Text = pelanggan.Alamat;
-            txtEmail.Text = pelanggan.Email;
+            txtEmailPelanggan.Text = pelanggan.Email;
             txtNomerHp.Text = pelanggan.NomerHp;
+            txtAlamat.Text = pelanggan.Alamat;
             txtUsername.Text = pelanggan.Username;
             txtSisaWaktu.Text = pelanggan.SisaWaktu.ToString("hh':'mm':'ss");
         }
@@ -91,14 +91,15 @@ namespace Percobaan2.View
             pelanggan.Email = txtEmailPelanggan.Text;
             pelanggan.NomerHp = txtNomerHp.Text;
             pelanggan.Username = txtUsername.Text;
-            
+            pelanggan.Password = txtPassword.Text;
+
 
             int result = 0;
 
             if (isNewData) // tambah data baru, panggil method Create
             {
                 // panggil operasi CRUD
-                result = controller.Create(pelanggan);
+                result = controllerPelanggan.Create(pelanggan);
 
                 if (result > 0) // tambah data berhasil
                 {
@@ -118,10 +119,11 @@ namespace Percobaan2.View
             else // edit data, panggil method Update
             {
                 // panggil operasi CRUD
-                result = controller.Update(pelanggan);
+                result = controllerPelanggan.Update(pelanggan);
 
                 if (result > 0)
                 {
+
                     OnUpdate(pelanggan); // panggil event OnUpdate
                     this.Close();
                 }
@@ -131,6 +133,22 @@ namespace Percobaan2.View
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmCrudAkunPelanggan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TambahPaket tambahpaket = new TambahPaket();
+            tambahpaket.ShowDialog();
         }
     }
 }

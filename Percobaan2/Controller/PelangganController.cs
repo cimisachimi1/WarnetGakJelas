@@ -99,8 +99,6 @@ namespace Percobaan2.Controller
                 return 0;
             }
 
-            // You can add similar checks for other properties if needed
-
             // Create a context using a using block
             using (DbContext context = new DbContext())
             {
@@ -127,13 +125,49 @@ namespace Percobaan2.Controller
         }
 
 
-        public int Update(Pelanggan pelangganObject)
+        public int Update(Pelanggan pelanggan)
         {
+            int result = 0;
+
+            // Check if ID_Pelanggan is empty or null
+            if (string.IsNullOrEmpty(pelanggan.ID_Pelanggan))
+            {
+                MessageBox.Show("ID Pelanggan harus diisi !!!", "Peringatan",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return 0;
+            }
+
+            // Check if NamaPelanggan is empty or null
+            if (string.IsNullOrEmpty(pelanggan.NamaPelanggan))
+            {
+                MessageBox.Show("Nama Pelanggan harus diisi !!!", "Peringatan",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return 0;
+            }
+
+            // Create a context using a using block
             using (DbContext context = new DbContext())
             {
-                _repository = new PelangganRepository(context);
-                return _repository.Edit(pelangganObject);
+                // Create a repository object
+                _repository = new PelangganRepository(context); // Assuming you have a PelangganRepository class
+
+                // Call the Create method of the repository to add data
+                result = _repository.Update(pelanggan);
             }
+
+            // Display appropriate messages based on the result
+            if (result > 0)
+            {
+                MessageBox.Show("Data pelanggan berhasil disimpan !", "Informasi",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Data pelanggan gagal disimpan !!!", "Peringatan",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            return result;
         }
 
     }

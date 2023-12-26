@@ -21,7 +21,6 @@ namespace Percobaan2.Controller
 
             return pakets;
         }
-
-
     }
 }
+
