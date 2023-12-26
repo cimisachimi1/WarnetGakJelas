@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.2.0" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="NuGet.Frameworks" Version="6.8.0" />
     <PackageReference Include="SQLite" Version="3.13.0" />
     <PackageReference Include="Stub.System.Data.SQLite.Core.NetFramework" Version="1.0.118" />

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Percobaan2.Model.Entity;
+using Percobaan2.Model.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,9 @@ namespace Percobaan2.View
 {
     public partial class MenuUtama : Form
     {
+        private readonly PelangganRepository _pelangganRepository;
+        private Pelanggan _currentPelanggan;
+        private System.Threading.Timer _updateTimer;
         public MenuUtama()
         {
             InitializeComponent();
@@ -27,7 +32,7 @@ namespace Percobaan2.View
         private void btnAkun_Click(object sender, EventArgs e)
         {
             isiAkun1.BringToFront();
-            pnlFocus.Width = btnAkun.Width;
+            
 
         }
 

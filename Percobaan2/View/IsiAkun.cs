@@ -18,10 +18,11 @@ namespace Percobaan2.View
 
         public PelangganController controllerPelanggan;
 
+        public TransaksiWarnetController transaksiWarnetController;
+
         public IsiAkun()
         {
             InitializeComponent();
-
             controllerPelanggan = new PelangganController();
 
             InisialisasiListView();
@@ -87,20 +88,18 @@ namespace Percobaan2.View
         }
         private void OnUpdateEventHandler(Pelanggan pelanggan)
         {
-                // Get the index of the selected item
-                int index = lvwAkun.SelectedIndices[0];
+            // Get the index of the selected item
+            int index = lvwAkun.SelectedIndices[0];
 
-                // Update information of the selected pelanggan in the list view
-                ListViewItem itemRow = lvwAkun.Items[index];
-                itemRow.SubItems[1].Text = pelanggan.ID_Pelanggan;
-                itemRow.SubItems[2].Text = pelanggan.NamaPelanggan;
-                itemRow.SubItems[3].Text = pelanggan.Alamat;
-                itemRow.SubItems[4].Text = pelanggan.Email;
-                itemRow.SubItems[5].Text = pelanggan.NomerHp;
-                itemRow.SubItems[6].Text = pelanggan.Username;
-                itemRow.SubItems[7].Text = pelanggan.SisaWaktu.ToString("hh':'mm':'ss");
-
-
+            // Update information of the selected pelanggan in the list view
+            ListViewItem itemRow = lvwAkun.Items[index];
+            itemRow.SubItems[1].Text = pelanggan.ID_Pelanggan;
+            itemRow.SubItems[2].Text = pelanggan.NamaPelanggan;
+            itemRow.SubItems[3].Text = pelanggan.Alamat;
+            itemRow.SubItems[4].Text = pelanggan.Email;
+            itemRow.SubItems[5].Text = pelanggan.NomerHp;
+            itemRow.SubItems[6].Text = pelanggan.Username;
+            itemRow.SubItems[7].Text = pelanggan.SisaWaktu.ToString("hh':'mm':'ss");
         }
 
 
@@ -115,14 +114,33 @@ namespace Percobaan2.View
         }
         private void btnEditAkun_Click(object sender, EventArgs e)
         {
-            if (lvwAkun.SelectedItems.Count > 0) {
+            if (lvwAkun.SelectedItems.Count > 0)
+            {
                 Pelanggan pelanggan = ListOfPelanggan[lvwAkun.SelectedIndices[0]];
-                
+
                 FrmCrudAkunPelanggan frmcrudakunpelanggan = new FrmCrudAkunPelanggan("Edit Data Pelanggan ", pelanggan, controllerPelanggan);
 
                 frmcrudakunpelanggan.OnUpdate += OnUpdateEventHandler;
 
                 frmcrudakunpelanggan.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Data belum dipilih", "Peringatan", MessageBoxButtons.OK,
+                        MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnTambahBilling_Click(object sender, EventArgs e)
+        {
+            if (lvwAkun.SelectedItems.Count > 0)
+            {
+                Pelanggan pelanggan = ListOfPelanggan[lvwAkun.SelectedIndices[0]];
+                TambahPaket tambahpaket = new TambahPaket("Tambah Billing", pelanggan, controllerPelanggan);
+                tambahpaket.OnUpdate += OnUpdateEventHandler;
+
+                tambahpaket.ShowDialog();
 
             }
             else
@@ -153,7 +171,7 @@ namespace Percobaan2.View
                 item.SubItems.Add(pelanggan.NomerHp);
                 item.SubItems.Add(pelanggan.Username);
                 item.SubItems.Add(pelanggan.Password);
-                item.SubItems.Add(pelanggan.SisaWaktu.ToString()); // Assuming SisaWaktu is of TimeSpan type
+                item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss"));
 
                 // tampilkan data pelanggan ke listview
                 lvwAkun.Items.Add(item);
@@ -181,8 +199,7 @@ namespace Percobaan2.View
                 item.SubItems.Add(pelanggan.NomerHp);
                 item.SubItems.Add(pelanggan.Username);
                 item.SubItems.Add(pelanggan.Password);
-                item.SubItems.Add(pelanggan.SisaWaktu.ToString()); // Assuming SisaWaktu is of TimeSpan type
-
+                item.SubItems.Add(pelanggan.SisaWaktu.ToString("hh':'mm':'ss"));
                 // tampilkan data pelanggan ke listview
                 lvwAkun.Items.Add(item);
             }
@@ -217,7 +234,44 @@ namespace Percobaan2.View
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            // Instantiate a new TransaksiWarnet object with sample data
+            TransaksiWarnet newTransaksiWarnet = new TransaksiWarnet
+            {
+                ID_Transaksi = "T3r6",
+                Username = "joh3n_doeda",
+                Tanggal = DateTime.Now,
+                Harga = 1520,
+                Waktu = 323,
+                Operator = "Op4"
+            };
+
+            // Assuming your controller is named TransaksiWarnetController
+            TransaksiWarnetController transaksiWarnetController = new TransaksiWarnetController();
+
+            // Call the Create method in the controller
+            int result = transaksiWarnetController.Create(newTransaksiWarnet);
+
+            // Check the result and display a message
+            if (result > 0)
+            {
+                MessageBox.Show("TransaksiWarnet created successfully!", "Success",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed to create TransaksiWarnet.", "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+        }
     }
 }
 

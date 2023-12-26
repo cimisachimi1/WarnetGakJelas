@@ -50,7 +50,6 @@
             txtUsername = new TextBox();
             panel3 = new Panel();
             label4 = new Label();
-            button1 = new Button();
             txtSisaWaktu = new TextBox();
             label7 = new Label();
             panel2.SuspendLayout();
@@ -243,7 +242,6 @@
             // 
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(label4);
-            panel3.Controls.Add(button1);
             panel3.Controls.Add(txtSisaWaktu);
             panel3.Location = new Point(625, 35);
             panel3.Name = "panel3";
@@ -258,16 +256,6 @@
             label4.Size = new Size(70, 15);
             label4.TabIndex = 0;
             label4.Text = "Sisa Waktu :";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(14, 63);
-            button1.Name = "button1";
-            button1.Size = new Size(98, 23);
-            button1.TabIndex = 8;
-            button1.Text = "Beli Paket";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // txtSisaWaktu
             // 
@@ -333,7 +321,6 @@
         private TextBox txtUsername;
         private Panel panel3;
         private Label label4;
-        private Button button1;
         private TextBox txtSisaWaktu;
         private Label label7;
         private Label fdsfsdf;

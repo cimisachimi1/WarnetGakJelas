@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
             "NuGet.Frameworks": {
               "target": "Package",
               "version": "[6.8.0, )"

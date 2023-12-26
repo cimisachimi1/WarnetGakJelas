@@ -30,18 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUtama));
             btnTransaksi = new Button();
-            btnTambahan = new Button();
             btnAkun = new Button();
             btnKomputer = new Button();
             isiKomputer1 = new IsiKomputer();
             isiAkun1 = new IsiAkun();
-            pnlFocus = new Panel();
             isiTransaksi1 = new IsiTransaksi();
             laporan1 = new Laporan();
             menuStrip1 = new MenuStrip();
             dfd = new ToolStripMenuItem();
             akunOperatorToolStripMenuItem = new ToolStripMenuItem();
-            btnLaporan = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,7 +51,7 @@
             btnTransaksi.ForeColor = Color.White;
             btnTransaksi.Image = (Image)resources.GetObject("btnTransaksi.Image");
             btnTransaksi.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTransaksi.Location = new Point(773, 25);
+            btnTransaksi.Location = new Point(621, 25);
             btnTransaksi.Margin = new Padding(4, 3, 4, 3);
             btnTransaksi.Name = "btnTransaksi";
             btnTransaksi.Size = new Size(144, 50);
@@ -63,25 +60,6 @@
             btnTransaksi.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnTransaksi.UseVisualStyleBackColor = false;
             btnTransaksi.Click += btnTransaksi_Click;
-            // 
-            // btnTambahan
-            // 
-            btnTambahan.BackColor = SystemColors.WindowFrame;
-            btnTambahan.FlatAppearance.BorderSize = 0;
-            btnTambahan.FlatStyle = FlatStyle.Flat;
-            btnTambahan.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTambahan.ForeColor = Color.White;
-            btnTambahan.Image = (Image)resources.GetObject("btnTambahan.Image");
-            btnTambahan.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTambahan.Location = new Point(621, 25);
-            btnTambahan.Margin = new Padding(4, 3, 4, 3);
-            btnTambahan.Name = "btnTambahan";
-            btnTambahan.Size = new Size(144, 50);
-            btnTambahan.TabIndex = 11;
-            btnTambahan.Text = "Layanan Tambahan";
-            btnTambahan.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnTambahan.UseVisualStyleBackColor = false;
-            btnTambahan.Click += btnTambahan_Click;
             // 
             // btnAkun
             // 
@@ -135,14 +113,6 @@
             isiAkun1.Size = new Size(1066, 569);
             isiAkun1.TabIndex = 15;
             // 
-            // pnlFocus
-            // 
-            pnlFocus.BackColor = SystemColors.ActiveCaption;
-            pnlFocus.Location = new Point(317, 74);
-            pnlFocus.Name = "pnlFocus";
-            pnlFocus.Size = new Size(144, 10);
-            pnlFocus.TabIndex = 16;
-            // 
             // isiTransaksi1
             // 
             isiTransaksi1.Location = new Point(12, 90);
@@ -180,25 +150,6 @@
             akunOperatorToolStripMenuItem.Text = "Akun Operator";
             akunOperatorToolStripMenuItem.Click += akunOperatorToolStripMenuItem_Click;
             // 
-            // btnLaporan
-            // 
-            btnLaporan.BackColor = SystemColors.WindowFrame;
-            btnLaporan.FlatAppearance.BorderSize = 0;
-            btnLaporan.FlatStyle = FlatStyle.Flat;
-            btnLaporan.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLaporan.ForeColor = Color.White;
-            btnLaporan.Image = (Image)resources.GetObject("btnLaporan.Image");
-            btnLaporan.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLaporan.Location = new Point(925, 25);
-            btnLaporan.Margin = new Padding(4, 3, 4, 3);
-            btnLaporan.Name = "btnLaporan";
-            btnLaporan.Size = new Size(144, 50);
-            btnLaporan.TabIndex = 10;
-            btnLaporan.Text = "Laporan";
-            btnLaporan.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnLaporan.UseVisualStyleBackColor = false;
-            btnLaporan.Click += btnTransaksi_Click;
-            // 
             // MenuUtama
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -206,12 +157,9 @@
             ClientSize = new Size(1077, 685);
             Controls.Add(laporan1);
             Controls.Add(isiTransaksi1);
-            Controls.Add(pnlFocus);
             Controls.Add(isiKomputer1);
             Controls.Add(isiAkun1);
-            Controls.Add(btnLaporan);
             Controls.Add(btnTransaksi);
-            Controls.Add(btnTambahan);
             Controls.Add(btnAkun);
             Controls.Add(btnKomputer);
             Controls.Add(menuStrip1);
@@ -227,17 +175,14 @@
         #endregion
 
         private Button btnTransaksi;
-        private Button btnTambahan;
         private Button btnAkun;
         private Button btnKomputer;
         private IsiKomputer isiKomputer1;
         private IsiAkun isiAkun1;
-        private Panel pnlFocus;
         private IsiTransaksi isiTransaksi1;
         private Laporan laporan1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem dfd;
         private ToolStripMenuItem akunOperatorToolStripMenuItem;
-        private Button btnLaporan;
     }
 }

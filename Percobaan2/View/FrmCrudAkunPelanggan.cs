@@ -79,6 +79,7 @@ namespace Percobaan2.View
             this.Close();
         }
 
+
         private void btnKirim_Click(object sender, EventArgs e)
         {
             // jika data baru, inisialisasi objek pelanggan

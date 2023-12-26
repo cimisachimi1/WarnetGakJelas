@@ -11,10 +11,12 @@ namespace Percobaan2.Model.Entity
     {
         public string ID_Transaksi { get; set; }
         public string ID_Pelanggan { get; set; }
-        public DateTime TanggalTransaksi { get; set; }
-        public DateTime WaktuTerpakai {  get; set; }
-        public int Harga {  get; set; }
+        public string ID_Paket { get; set; }
         public string ID_Operator { get; set; }
+        public DateTime TanggalTransaksi { get; set; }
+        public int WaktuTerpakai { get; set; }
+        public int Harga { get; set; }
+       
 
     }
 }

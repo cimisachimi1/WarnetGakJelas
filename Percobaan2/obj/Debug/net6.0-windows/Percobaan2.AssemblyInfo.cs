@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Percobaan2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+099fe55f335bc7791c8859f8ef0c3a4c3fff7aa2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e09b5d408403bc9ca161f8dddc183b186e087571")]
 [assembly: System.Reflection.AssemblyProductAttribute("Percobaan2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Percobaan2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

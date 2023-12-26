@@ -28,9 +28,10 @@ namespace Percobaan2.Model.Context
 
 
                 conn = new MySqlConnection(connectionString); // buat objek connection
+                
                 conn.Open(); // buka koneksi ke database
-               
-                }
+                
+            }
             // jika terjadi error di blok try, akan ditangani langsung oleh blok catch
             catch (Exception ex)
             {

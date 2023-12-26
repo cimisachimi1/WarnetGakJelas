@@ -35,7 +35,8 @@
             btnBaruAkun = new Button();
             btnEditAkun = new Button();
             btnHapusAkun = new Button();
-            button1 = new Button();
+            btnTambahBilling = new Button();
+            btnRefresh = new Button();
             SuspendLayout();
             // 
             // lvwAkun
@@ -75,7 +76,7 @@
             // 
             // btnBaruAkun
             // 
-            btnBaruAkun.Location = new Point(408, 19);
+            btnBaruAkun.Location = new Point(235, 19);
             btnBaruAkun.Name = "btnBaruAkun";
             btnBaruAkun.Size = new Size(75, 23);
             btnBaruAkun.TabIndex = 4;
@@ -85,17 +86,17 @@
             // 
             // btnEditAkun
             // 
-            btnEditAkun.Location = new Point(489, 19);
+            btnEditAkun.Location = new Point(423, 19);
             btnEditAkun.Name = "btnEditAkun";
             btnEditAkun.Size = new Size(105, 23);
             btnEditAkun.TabIndex = 5;
-            btnEditAkun.Text = "Edit dan TOPUP";
+            btnEditAkun.Text = "Edit";
             btnEditAkun.UseVisualStyleBackColor = true;
             btnEditAkun.Click += btnEditAkun_Click;
             // 
             // btnHapusAkun
             // 
-            btnHapusAkun.Location = new Point(600, 19);
+            btnHapusAkun.Location = new Point(534, 19);
             btnHapusAkun.Name = "btnHapusAkun";
             btnHapusAkun.Size = new Size(88, 23);
             btnHapusAkun.TabIndex = 5;
@@ -103,20 +104,32 @@
             btnHapusAkun.UseVisualStyleBackColor = true;
             btnHapusAkun.Click += btnHapusAkun_Click;
             // 
-            // button1
+            // btnTambahBilling
             // 
-            button1.Location = new Point(956, 19);
-            button1.Name = "button1";
-            button1.Size = new Size(88, 23);
-            button1.TabIndex = 5;
-            button1.Text = "Refresh";
-            button1.UseVisualStyleBackColor = true;
+            btnTambahBilling.Location = new Point(316, 19);
+            btnTambahBilling.Name = "btnTambahBilling";
+            btnTambahBilling.Size = new Size(101, 23);
+            btnTambahBilling.TabIndex = 6;
+            btnTambahBilling.Text = "Tambah Billing";
+            btnTambahBilling.UseVisualStyleBackColor = true;
+            btnTambahBilling.Click += btnTambahBilling_Click;
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.Location = new Point(969, 19);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(75, 23);
+            btnRefresh.TabIndex = 7;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // IsiAkun
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button1);
+            Controls.Add(btnRefresh);
+            Controls.Add(btnTambahBilling);
             Controls.Add(btnHapusAkun);
             Controls.Add(btnEditAkun);
             Controls.Add(btnBaruAkun);
@@ -140,6 +153,7 @@
         private Button btnBaruAkun;
         private Button btnEditAkun;
         private Button btnHapusAkun;
-        private Button button1;
+        private Button btnTambahBilling;
+        private Button btnRefresh;
     }
 }

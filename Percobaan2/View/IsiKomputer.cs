@@ -10,14 +10,20 @@ using System.Windows.Forms;
 
 using Percobaan2.Model.Entity;
 using Percobaan2.Controller;
+using Percobaan2.Model.Repository;
+using Microsoft.VisualBasic.Devices;
 
 
 namespace Percobaan2.View
 {
     public partial class IsiKomputer : UserControl
     {
+
+
         private List<KomputerWarnet> listOfKomputer = new List<KomputerWarnet>();
         private KomputerWarnetController controllerKomputer;
+
+        private List<KomputerWarnet> komputer;
 
         public IsiKomputer()
         {
@@ -42,6 +48,8 @@ namespace Percobaan2.View
             lvwKomputer.Columns.Add("Jenis Komputer", 150, HorizontalAlignment.Left);
 
         }
+
+
         private void LoadDataKomputer()
         {
             lvwKomputer.Items.Clear();
@@ -64,5 +72,11 @@ namespace Percobaan2.View
         {
 
         }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
